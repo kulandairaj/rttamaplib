@@ -1,0 +1,21 @@
+{
+  "name": "rttamaplib",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
+    "@angular/core": "^6.0.0-rc.0 || ^6.0.0"
+  },
+  "main": "bundles/rttamaplib.umd.js",
+  "module": "fesm5/rttamaplib.js",
+  "es2015": "fesm2015/rttamaplib.js",
+  "esm5": "esm5/rttamaplib.js",
+  "esm2015": "esm2015/rttamaplib.js",
+  "fesm5": "fesm5/rttamaplib.js",
+  "fesm2015": "fesm2015/rttamaplib.js",
+  "typings": "rttamaplib.d.ts",
+  "metadata": "rttamaplib.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}

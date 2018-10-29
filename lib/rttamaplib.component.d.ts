@@ -1,6 +1,5 @@
 import { ViewContainerRef, ElementRef, OnInit, EventEmitter } from '@angular/core';
 import { RttamaplibService } from './rttamaplib.service';
-import { Popup } from 'ng2-opd-popup';
 import { TruckDetails, Ticket } from './models/truckdetails';
 export declare class RttamaplibComponent implements OnInit {
     private mapService;
@@ -23,8 +22,6 @@ export declare class RttamaplibComponent implements OnInit {
     myMap: Element;
     ready: boolean;
     animatedLayer: any;
-    smspopup: Popup;
-    emailpopup: Popup;
     infoTemplate: ElementRef;
     socket: any;
     socketURL: string;

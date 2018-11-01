@@ -2,7 +2,7 @@ import { ViewContainerRef, ElementRef, OnInit, EventEmitter } from '@angular/cor
 import { RttamaplibService } from './rttamaplib.service';
 import { TruckDetails, Ticket } from './models/truckdetails';
 export declare class RttamaplibComponent implements OnInit {
-    private mapService;
+    mapService: RttamaplibService;
     connection: any;
     map: any;
     contextMenu: any;

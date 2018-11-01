@@ -17,6 +17,7 @@ export declare class RttamaplibService {
     getWebPhoneUserInfo(attUID: any): Promise<any>;
     GetNextRouteData(fromAttitude: any, toAttitude: any): Promise<any>;
     GetRouteMapData(dirDetails: any[]): any[];
+    getAddressByLatLong(latitude: any, longitude: any): Observable<Response>;
     sendEmail(fromEmail: any, toEmail: any, fromName: any, toName: any, subject: any, body: any): Promise<any>;
     sendSMS(toNumber: any, bodyMessage: any): Promise<any>;
     getTruckFeed(techIds: any, mgrId: any): Observable<{}>;

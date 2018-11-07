@@ -11,6 +11,7 @@ export declare class RttamaplibComponent implements OnInit {
     technicianName: string;
     travalDuration: any;
     truckItems: any[];
+    testClass: string;
     directionsManager: any;
     trafficManager: any;
     truckList: any[];
@@ -74,6 +75,7 @@ export declare class RttamaplibComponent implements OnInit {
     getListofFieldManagers(): void;
     getTechDetailsForManagers(): void;
     loadMapView(type: String): void;
+    setZoomPosition(): void;
     LoadTrucks(maps: any, lt: any, lg: any, rd: any, isTruckSearch: any): void;
     getTruckUrl(color: any): string;
     convertMilesToFeet(miles: any): number;

@@ -67,6 +67,7 @@ export declare class RttamaplibComponent implements OnInit {
     NotificationAdmin: boolean;
     ticketList: any;
     loggedInUser: string;
+    singleView: string;
     ticketClick: EventEmitter<any>;
     ticketData: Ticket[];
     constructor(mapService: RttamaplibService, vRef: ViewContainerRef);

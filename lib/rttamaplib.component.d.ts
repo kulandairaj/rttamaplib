@@ -69,7 +69,11 @@ export declare class RttamaplibComponent implements OnInit {
     loggedInUser: string;
     singleView: string;
     ticketClick: EventEmitter<any>;
+    selectedticketNo: any;
     ticketData: Ticket[];
+    selectedPushpin: any;
+    currentLatitude: any;
+    currentLongitude: any;
     constructor(mapService: RttamaplibService, vRef: ViewContainerRef);
     ngOnInit(): void;
     checkUserLevel(IsShowTruck: any): void;
@@ -103,7 +107,9 @@ export declare class RttamaplibComponent implements OnInit {
     getThresholdValue(): void;
     stringifyBodyJson(data: any): any;
     UTCToTimeZone(recordDatetime: any): any;
-    addTicketData(map: any, dirManager: any): void;
+    getTicketModalHTML(data: any, distancdData: any, fromAddress: any, toAddress: any): String;
+    loadCurrentLocation(that: any, map: any, dirManager: any): void;
+    addTicketData(that: any, map: any, dirManager: any): void;
     UpdateTicketJSONDataList(): void;
     ngOnDestroy(): void;
 }

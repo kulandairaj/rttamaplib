@@ -72,6 +72,7 @@ export declare class RttamaplibComponent implements OnInit {
     selectedticketNo: any;
     ticketData: Ticket[];
     selectedPushpin: any;
+    selectedPushpinData: any;
     currentLatitude: any;
     currentLongitude: any;
     directionUpdated: any;
@@ -108,6 +109,8 @@ export declare class RttamaplibComponent implements OnInit {
     getThresholdValue(): void;
     stringifyBodyJson(data: any): any;
     UTCToTimeZone(recordDatetime: any): any;
+    UpdatepinClicked(that: any, parms: any, lauchTicketCard: number): void;
+    UpdateTicketDirections(that: any, map: any, dirManager: any, infoBoxMetaData: any, endLat: any, endLong: any, loadbtnClick: any): void;
     getTicketModalHTML(data: any, distancdData: any, fromAddress: any, toAddress: any): String;
     loadCurrentLocation(that: any, map: any, dirManager: any): void;
     addTicketData(that: any, map: any, dirManager: any, loadPopupClick: any): void;
